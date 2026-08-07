@@ -1,0 +1,12 @@
+name: payer-edi-connect
+port: 8804
+lang: python
+description: "payer-edi-connect \u2014 domain: insurance"
+http_deps:
+- payer-directory
+- secrets-vault
+- audit-log-service
+publishes:
+- audit.event
+subscribes:
+- claim.submitted
