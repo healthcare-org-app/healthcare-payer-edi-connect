@@ -1,7 +1,7 @@
 services:
   payer-edi-connect:
     build: .
-    container_name: ${NAME_UNDERSCORE}
+    container_name: payer_edi_connect
     depends_on:
       postgres:
         condition: service_healthy
